@@ -1,8 +1,23 @@
-<script>
 
-$(document).ready(function()){
-    $("button").click(function(){
-        $("#start").hide();
-    })
+var correct = "0";
+var incorrect = "0";
+var unanswered = "0";
+
+
+
+
+
+
+
+//Hide start button on click event.
+$(document).ready(function() {
+    $("#container").hide();
 });
-</script>
+
+    $("button").click(function(){
+            $("button").hide();
+    });
+
+    $("button").click(function(){
+        $("#container").show();
+    });
